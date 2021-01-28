@@ -55,7 +55,7 @@ program define use_test
   cap mkdir tests
 
   // Some values to be used
-  local clen = strlen("Tests for  command")
+  local clen = strlen("Tests for  command in ")
 
   // Detect the command name in the ado file
   file open myprog using "`filename'", read
@@ -68,7 +68,7 @@ program define use_test
       file write testdo "/***" _n
       file write testdo _n
       file write testdo "Tests for `cmd' command in `filename'" _n
-      file write testdo ("=" * (strlen("`cmd'") + `clen')) _n
+      file write testdo ("=" * (strlen("`cmd'") + strlen("`filename'") + `clen')) _n
       file write testdo _n
       file write testdo "***/" _n 
       file write testdo _n
