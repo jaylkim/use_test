@@ -41,6 +41,9 @@ MIT License
 
 Copyright (c) 2021 Jongyeon Kim
 
+
+_This help file was created by the_ __markdoc__ _package written by Haghish_
+
 ***/
 
 
